@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasapeh | Portfolio</title>
+  <style>
+    :root {
+      --main-bg: #fff1f7;
+      --card-bg: #ffffff;
+      --accent: #e69fc4;
+      --text: #333333;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+    }
+    body {
+      background-color: var(--main-bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(to right, #f7d1e4, #d4e5f9);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .lang-toggle {
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2.section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #c24e89;
+      text-align: center;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px var(--shadow);
+      margin-bottom: 30px;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+    .project-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: #f0f0f0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tasapeh's Portfolio</h1>
+    <p>A creative web designer & developer</p>
+    <div class="lang-toggle">
+      <button onclick="toggleLanguage()">Switch to Arabic عربي</button>
+    </div>
+  </header>  <div class="container">
+    <section>
+      <h2 class="section-title" data-en="About Me" data-ar="من أنا">About Me</h2>
+      <div class="card">
+     <p data-en="I'm a passionate programming student with a creative eye for design. I specialize in building modern, responsive websites using HTML, CSS, and JavaScript. In addition, I enjoy crafting stunning visuals and editing images using Photoshop. I aim to combine functionality with aesthetics to deliver unique and user-friendly experiences."
+   data-ar="أنا طالبة برمجة شغوفة وموهوبة في التصميم الإبداعي. أتخصص في بناء مواقع حديثة ومتجاوبة باستخدام HTML وCSS وJavaScript، وأستمتع أيضًا بتصميم وتعديل الصور باستخدام Photoshop. أهدف إلى الجمع بين الوظيفة والجمال لتقديم تجارب مميزة وسهلة الاستخدام.">
+  I'm a passionate programming student with a creative eye for design. I specialize in building modern, responsive websites using HTML, CSS, and JavaScript. In addition, I enjoy crafting stunning visuals and editing images using Photoshop. I aim to combine functionality with aesthetics to deliver unique and user-friendly experiences.
+</p>
+
+      </div>
+    </section>
+    <section>
+  <h2 class="section-title" data-en="Projects" data-ar="مشاريعي">Projects</h2>
+  <div class="card">
+    <h3>TeenTime Platform</h3>
+    <p>A platform for teens to manage time and goals.</p>
+    <a href="TeenTime/index.html" class="project-link">View Project</a>
+  </div>
+  <div class="card">
+    <h3>Memory Lane</h3>
+    <p>A journey with images and memories across pages.</p>
+    <a href="Memory Lane/index.html" class="project-link">View Project</a>
+  </div>
+
+    <div class="card">
+    <h3>Menu</h3>
+    <p>Diverse menu, jokes that suit your taste.
+Every dish is made with love</p>
+    <a href="Menu/index.html" class="project-link">View Project</a>
+  </div>
+
+
+      <div class="card">
+    <h3>Personality test</h3>
+    <p>Interactive Bitcoin Personality Test</p>
+    <a href="Personality test/index.html" class="project-link">View Project</a>
+  </div>
+
+
+
+        <div class="card">
+    <h3>What's inside you</h3>
+    <p>"Releasing Your Feelings" is an interactive website designed to help users express their negative feelings in a creative and visual way.</p>
+    <a href="What's inside you/index.html" class="project-link">View Project</a>
+  </div>
+</section>
+
+
+       <div class="card">
+    <h3>Strange Inventions Laboratory</h3>
+    <p>"It is a simple, interactive website that helps users take care of their psychological and mental state in a short and enjoyable time.</p>
+    <a href="Strange Inventions Laboratory/index.html" class="project-link">View Project</a>
+  </div>
+</section>
+<section>
+  <h2 class="section-title" data-en="What I Offer" data-ar="خدماتي">What I Offer</h2>
+  <div class="card">
+    <ul>
+      <li>Website design (HTML, CSS, JavaScript)</li>
+      <li>Image editing with Photoshop</li>
+      <li>Simple branding & social media posts</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title" data-en="Contact" data-ar="التواصل">Contact</h2>
+  <div class="card">
+    <p>Email :tasapehtarek@gmail.com</p>
+    <p>Or message me on my Facebook page.</p>
+  </div>
+</section>
+
+  </div>  <footer>
+    &copy; 2025 Tasapeh. All rights reserved.
+  </footer>  <script>
+    function toggleLanguage() {
+      const elems = document.querySelectorAll('[data-en]');
+      elems.forEach(el => {
+        const current = el.innerText;
+        el.innerText = el.getAttribute('data-ar');
+        el.setAttribute('data-ar', current);
+      });
+      const btn = document.querySelector('button');
+      btn.innerText = btn.innerText.includes('Arabic') ? 'Switch to English' : 'Switch to Arabic عربي';
+    }
+  </script></body>
+</html>
